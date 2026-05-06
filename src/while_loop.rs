@@ -13,9 +13,10 @@ pub fn while_loop() {
 /**
 * Rust's `while` won't be started if it `false` condition
 */
-pub fn while_false_condition() {
+fn while_false_condition() {
     let count = 10;
 
+    #[deny(clippy::while_immutable_condition)]
     while count <= 5 {
         println!("This won't be printed.");
     }
@@ -24,7 +25,7 @@ pub fn while_false_condition() {
 /**
 * using `break` to stop while
 */
-pub fn while_stop() {
+fn while_stop() {
     let mut count = 1;
 
     while count <= 9 {
@@ -42,7 +43,7 @@ pub fn while_stop() {
 /**
 * using `continue` to skip lines execution
 */
-pub fn while_continue() {
+fn while_continue() {
     let mut count = 1;
 
     while count <= 9 {

@@ -1,7 +1,7 @@
 pub fn ownership() {
     let a = String::from("Hello");
     let b = a;
-    // println!("{}", a);   BUG: `a` no longer owns the value
+    // println!("{}", a); // BUG: `a` no longer owns the value
     println!("{}", b); // Ok: b now owns the value
 
     // INFO: With simple types like `numbers`, `characters`, and `boolean`

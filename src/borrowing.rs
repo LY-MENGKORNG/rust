@@ -1,8 +1,7 @@
-/*  NOTE: Borrowing and References
-
-    Sometimes you want to use a value without taking ownership of it.
-    Rust lets you do this using a reference - this is called borrowing:
-
+/*
+*  NOTE: Borrowing and References
+*  Sometimes you want to use a value without taking ownership of it.
+*  Rust lets you do this using a reference - this is called borrowing:
 */
 
 pub fn borrowing() {

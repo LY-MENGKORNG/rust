@@ -1,4 +1,4 @@
-pub fn if_else() {
+pub fn conditions() {
     let x = 3;
     let y = 9;
 

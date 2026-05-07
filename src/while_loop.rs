@@ -14,12 +14,12 @@ pub fn while_loop() {
 * Rust's `while` won't be started if it `false` condition
 */
 fn while_false_condition() {
-    let count = 10;
-
-    #[deny(clippy::while_immutable_condition)]
-    while count <= 5 {
-        println!("This won't be printed.");
-    }
+    // let count = 10;
+    //
+    // #[deny(clippy::while_immutable_condition)]
+    // while count <= 5 {
+    //     println!("This won't be printed.");
+    // }
 }
 
 /**

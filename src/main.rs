@@ -1,6 +1,7 @@
 mod borrowing;
 mod condition;
 mod constant;
+mod data_structure;
 mod datatype;
 mod for_loop;
 mod function;
@@ -34,4 +35,6 @@ fn main() {
 
     ownership::ownership();
     borrowing::borrowing();
+
+    data_structure::data_structure();
 }

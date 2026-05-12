@@ -8,6 +8,7 @@ mod function;
 mod loops;
 mod matching;
 mod ownership;
+mod practice;
 mod scope;
 mod string;
 mod variable;
@@ -37,4 +38,5 @@ fn main() {
     borrowing::borrowing();
 
     data_structure::data_structure();
+    practice::practices();
 }

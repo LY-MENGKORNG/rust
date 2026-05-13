@@ -12,40 +12,21 @@ use std::io;
 
 pub fn rectangle_border() {
     let mut input = String::new();
-    io::stdin().read_line(&mut input).unwrap();
 
+    io::stdin().read_line(&mut input).unwrap();
     let width: i32 = input.trim().parse().unwrap();
-    // if width - 1 <= 0 {
-    //     println!("[width] must be greater 1");
-    //     return;
-    // }
 
     input = String::new();
+
     io::stdin().read_line(&mut input).unwrap();
-
     let height: i32 = input.trim().parse().unwrap();
-    // if height - 1 <= 0 {
-    //     println!("[height] must be greater 1");
-    //     return;
-    // }
 
-    let mut text_stars = String::from("*");
-    for _ in 1..width {
-        text_stars.push('*');
-    }
+    let border_x = "*".repeat(width as usize);
+    let row_between = format!("*{}*", " ".repeat((width - 2) as usize));
 
-    let space_width_len = width - 2;
-    let space_height_len = height - 2;
-
-    let mut row_between = String::from("*");
-    for _ in 0..space_width_len {
-        row_between.push(' ');
-    }
-    row_between.push('*');
-
-    println!("{}", text_stars);
-    for _ in 0..space_height_len {
+    println!("{}", border_x);
+    for _ in 0..height - 2 {
         println!("{}", row_between)
     }
-    println!("{}", text_stars);
+    println!("{}", border_x);
 }
